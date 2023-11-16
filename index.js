@@ -11,7 +11,7 @@ const replicate = new Replicate({
   auth: "",
 });
 
-// Firebase cloud functions for Image Generation as well as trash
+// Firebase cloud functions for image generation as well as trash identification and sorting
 
 // Test function
 exports.rubbishTest = functions.https.onRequest(async (req, res) => {
