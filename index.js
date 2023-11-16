@@ -162,7 +162,7 @@ module.exports.imageCreator = functions.https.onRequest(async (req, res) => {
 
 const theme2 = "superhero";
 
-// Image Creator - takes in an image returns an image based on the theme. In this case, the theme is superhero
+// superHeroCreator - takes in an image returns an image based on the theme. In this case, the theme is superhero
 module.exports.superHeroCreator = functions.https.onRequest(
   async (req, res) => {
     if (req.method !== "POST") {
@@ -236,7 +236,7 @@ module.exports.superHeroCreator = functions.https.onRequest(
   }
 );
 
-// Alternative model to OpenAI, utilizing Replicate API and image models
+// replicateModel - Alternative model to OpenAI, utilizing Replicate API and image models
 exports.replicateModel = functions.https.onRequest(async (req, res) => {
   if (req.method !== "POST") {
     return res.status(405).send("Method Not Allowed");
